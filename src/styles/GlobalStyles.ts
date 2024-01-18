@@ -7,9 +7,12 @@ const GlobalStyles = createGlobalStyle`
      --color-secondary: hsl(0, 87%, 67%);
 
      --color-neutral-1: hsl(0, 0%, 75%);
-     --color-neutral-2: hsl(257, 7%, 63%)
-     --color-neutral-3: hsl(255, 11%, 22%)
-     --color-neutral-4: hsl(260, 8%, 14%)
+     --color-neutral-2: hsl(257, 7%, 63%);
+     --color-neutral-3: hsl(255, 11%, 22%);
+     --color-neutral-4: hsl(260, 8%, 14%);
+
+     --color-btn-hover-1: hsl(180, 67%, 80%);
+     --color-btn-hover-2: hsl(258, 28%, 55%);
 
      --border-radius-sm: 12px;
      --border-radius-rounded: 25px;
