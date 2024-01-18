@@ -19,7 +19,7 @@ interface RoundedTypes {
 interface ButtonProps {
   size?: keyof Sizes;
   variation?: keyof Variations;
-  roundedType?: keyof RoundedTypes;
+  roundedtype?: keyof RoundedTypes;
 }
 
 const sizes: Sizes = {
@@ -51,7 +51,7 @@ const variations: Variations = {
     background-color: var(--color-primary-1);
 
     &:hover {
-      background-color: hsl(180, 67%, 80%);
+      background-color: var(--color-btn-hover-1);
     }
   `,
   secondary: css`
@@ -59,12 +59,12 @@ const variations: Variations = {
     background: var(--color-primary-2);
 
     &:hover {
-      background-color: hsl(258, 28%, 55%);
+      background-color: var(--color-btn-hover-2);
     }
   `,
 };
 
-const roundedType: RoundedTypes = {
+const roundedtype: RoundedTypes = {
   roundedSmall: css`
     border: none;
     border-radius: var(--border-radius-sm);
@@ -80,13 +80,13 @@ const roundedType: RoundedTypes = {
 const Button = styled.button<ButtonProps>`
   ${(props) => sizes[props.size || 'medium']}
   ${(props) => variations[props.variation || 'primary']}
-  ${(props) => roundedType[props.roundedType || 'roundedSmall']}
+  ${(props) => roundedtype[props.roundedtype || 'roundedSmall']}
 `;
 
 Button.defaultProps = {
   variation: 'primary',
   size: 'medium',
-  roundedType: 'roundedSmall',
+  roundedtype: 'roundedSmall',
 };
 
 export default Button;
