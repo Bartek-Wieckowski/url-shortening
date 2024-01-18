@@ -17,7 +17,7 @@ function Hero() {
               Build your brand’s recognition and get detailed insights on how
               your links are performing.
             </p>
-            <Button size="large" variation="primary" roundedType="roundedAll">
+            <Button size="large" variation="primary" roundedtype="roundedAll">
               Get Started
             </Button>
           </HeroDetails>
