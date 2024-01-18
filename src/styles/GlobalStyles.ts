@@ -6,10 +6,13 @@ const GlobalStyles = createGlobalStyle`
      --color-primary-2: hsl(257, 27%, 26%);
      --color-secondary: hsl(0, 87%, 67%);
 
-     --color-neutral-1:hsl(0, 0%, 75%);
-     --color-neutral-2:hsl(257, 7%, 63%)
-     --color-neutral-3:hsl(255, 11%, 22%)
-     --color-neutral-4:hsl(260, 8%, 14%)
+     --color-neutral-1: hsl(0, 0%, 75%);
+     --color-neutral-2: hsl(257, 7%, 63%)
+     --color-neutral-3: hsl(255, 11%, 22%)
+     --color-neutral-4: hsl(260, 8%, 14%)
+
+     --border-radius-sm: 12px;
+     --border-radius-rounded: 25px;
 
 }
 
@@ -30,6 +33,7 @@ body {
   color: var(--color-neutral-4);
   line-height: 1.5;
   font-size: 1.8rem;
+  overflow-x: hidden;
 }
 
 a {
@@ -50,7 +54,12 @@ h5,
 h6 {
   overflow-wrap: break-word;
   hyphens: auto;
+  margin: 0;
+  padding: 0;
 }
+p {
+    font-weight: 400;
+  }
 
 img {
   max-width: 100%;
@@ -64,6 +73,23 @@ button {
   cursor: not-allowed;
 }
 
+h1 {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+
+    @media (min-width: 576px) {
+      font-size: 3.2rem;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 3.6rem;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 4.8rem;
+    }
+  }
 `;
 
 export default GlobalStyles;
