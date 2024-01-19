@@ -23,5 +23,5 @@ export default FormSection;
 const FormSectionStyles = styled.section`
   position: relative;
   background-color: var(--color-neutral-1);
-  height: 100vh;
+  padding-bottom: 2rem;
 `;

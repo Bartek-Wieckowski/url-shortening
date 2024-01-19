@@ -60,6 +60,19 @@ const LogoStyle = styled.div`
 
 const WrapperLists = styled.div`
   display: none;
+  & ul:last-of-type {
+    & li {
+      &:nth-child(2) {
+        & .special-userLink {
+          background-color: var(--color-primary-1);
+          color: #fff;
+          &:hover {
+            background-color: var(--color-btn-hover-1);
+          }
+        }
+      }
+    }
+  }
   &.isOpen {
     display: flex;
     flex-direction: column;
