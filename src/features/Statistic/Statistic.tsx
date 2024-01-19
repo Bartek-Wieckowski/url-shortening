@@ -26,7 +26,7 @@ export default Statistic;
 
 const StatisticSectionStyles = styled.section`
   position: relative;
-  background-color: var(--color-neutral-1);
+  background-color: var(--color-setion-bg);
   padding-bottom: 2rem;
 
   & .stat-title,
