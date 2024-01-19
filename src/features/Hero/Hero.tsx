@@ -37,6 +37,8 @@ const HeroStyle = styled.section`
   background-color: #fff;
   max-width: 1920px;
   margin: 0 auto;
+  padding-bottom: 20rem;
+  overflow-x: hidden;
 
   & ${Container} {
     overflow-x: hidden;
