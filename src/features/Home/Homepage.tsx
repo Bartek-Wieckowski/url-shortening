@@ -1,6 +1,7 @@
 import FormSection from '../FormSection/FormSection';
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
+import Statistic from '../Statistic/Statistic';
 
 function Homepage() {
   return (
@@ -8,6 +9,7 @@ function Homepage() {
       <Header />
       <Hero />
       <FormSection />
+      <Statistic />
     </>
   );
 }
