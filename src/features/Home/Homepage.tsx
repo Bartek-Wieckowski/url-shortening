@@ -1,4 +1,5 @@
 import BoostSection from '../BoostSection/BoostSection';
+import Footer from '../Footer/Footer';
 import FormSection from '../FormSection/FormSection';
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
@@ -12,6 +13,7 @@ function Homepage() {
       <FormSection />
       <Statistic />
       <BoostSection />
+      <Footer />
     </>
   );
 }
