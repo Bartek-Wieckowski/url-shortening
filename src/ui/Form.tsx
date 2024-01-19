@@ -2,21 +2,32 @@ import styled from 'styled-components';
 import formBg from '../assets/images/bg-shorten-desktop.svg';
 import Button from './Button';
 import { useRef, useState } from 'react';
+import { LinksType } from '../features/FormSection/FormLinks.type';
 
-function Form() {
+interface FormProps {
+  onAddLink: (newLink: LinksType) => void;
+}
+
+function Form({ onAddLink }: FormProps) {
   const [error, setError] = useState<string | null>(null);
   const linkRef = useRef<HTMLInputElement>(null);
 
   const handleAddLink = (e: React.FormEvent) => {
     e.preventDefault();
-    const newLink = linkRef.current?.value;
+    const currentLink = linkRef.current?.value;
 
-    if (!newLink) {
+    if (!currentLink) {
       setError('Please add link');
       return;
     }
 
-    //    TODO: zrobić dodanie linka
+    const generatedLink = `https://dummy-link.com/${Date.now()}`;
+    const linkItem: LinksType = {
+      oldLink: currentLink,
+      newLink: generatedLink,
+    };
+
+    onAddLink(linkItem);
 
     setError(null);
     linkRef.current.value = '';
