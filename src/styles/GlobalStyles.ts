@@ -93,6 +93,25 @@ h1 {
       font-size: 4.8rem;
     }
   }
+
+h2 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+
+  @media (min-width: 576px) {
+    font-size: 2.8rem;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 3.2rem;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 4rem;
+  }
+}
+
 `;
 
 export default GlobalStyles;
