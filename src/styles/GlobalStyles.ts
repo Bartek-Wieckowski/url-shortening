@@ -5,6 +5,7 @@ const GlobalStyles = createGlobalStyle`
      --color-primary-1: hsl(180, 66%, 49%);
      --color-primary-2: hsl(257, 27%, 26%);
      --color-secondary: hsl(0, 87%, 67%);
+     --color-setion-bg: #f0f1f6;
 
      --color-neutral-1: hsl(0, 0%, 75%);
      --color-neutral-2: hsl(257, 7%, 63%);
